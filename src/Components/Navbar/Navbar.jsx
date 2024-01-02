@@ -8,22 +8,64 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const Navbar = (
     <>
-      <NavLink className="nav" to="/ResearchInstitutes">
+      <NavLink
+        className={`nav ${
+          click
+            ? "btn btn-sm h-10 btn-wide bg-gradient-to-r from-indigo-500 to-purple-500 border-none text-white"
+            : ""
+        }`}
+        to="/ResearchInstitutes"
+      >
         Research Institutes
       </NavLink>
-      <NavLink className="nav" to="/Courses">
+      <NavLink
+        className={`nav ${
+          click
+            ? "btn btn-sm h-10 btn-wide bg-gradient-to-r from-indigo-500 to-purple-500 border-none text-white"
+            : ""
+        }`}
+        to="/Courses"
+      >
         Courses
       </NavLink>
-      <NavLink className="nav" to="/Selections">
+      <NavLink
+        className={`nav ${
+          click
+            ? "btn btn-sm h-10 btn-wide bg-gradient-to-r from-indigo-500 to-purple-500 border-none text-white"
+            : ""
+        }`}
+        to="/Selections"
+      >
         Selections
       </NavLink>
-      <NavLink className="nav" to="/Team">
+      <NavLink
+        className={`nav ${
+          click
+            ? "btn btn-sm h-10 btn-wide bg-gradient-to-r from-indigo-500 to-purple-500 border-none text-white"
+            : ""
+        }`}
+        to="/Team"
+      >
         Our Team
       </NavLink>
-      <NavLink className="nav" to="/Resources">
+      <NavLink
+        className={`nav ${
+          click
+            ? "btn btn-sm h-10 btn-wide bg-gradient-to-r from-indigo-500 to-purple-500 border-none text-white"
+            : ""
+        }`}
+        to="/Resources"
+      >
         Resources
       </NavLink>
-      <NavLink className="nav" to="/Contact">
+      <NavLink
+        className={`nav ${
+          click
+            ? "btn btn-sm h-10 btn-wide bg-gradient-to-r from-indigo-500 to-purple-500 border-none text-white"
+            : ""
+        }`}
+        to="/Contact"
+      >
         Contact Us
       </NavLink>
     </>
@@ -45,7 +87,7 @@ const Navbar = () => {
         <ul className="text-base lg:text-lg font-medium flex gap-4 lg:gap-10 xl:gap-16 Navbar">
           {Navbar}
           <NavLink className=" md:hidden" to="/login">
-            <button className="btn btn-sm h-10 rounded-full px-5 lg:px-8 font-light text-lg text-white bg-gradient-to-r from-indigo-500 to-purple-500">
+            <button className="btn border-none btn-sm h-10 rounded-full px-8  text-white bg-gradient-to-r from-indigo-500 to-purple-500">
               Login
             </button>
           </NavLink>
