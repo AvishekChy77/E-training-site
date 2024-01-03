@@ -1,6 +1,7 @@
 # SciAstra
 
-SciAstra is an online learning platform that provides courses for IAT and NEST exams. This repository contains the source code and files related to the SciAstra website.
+SciAstra is an online learning platform that provides courses for IAT and NEST exams. This repository contains the source code and files related to the demo SciAstra website.
+Live link: https://sciastra49.web.app
 
 ## Chatbot
 
