@@ -1,7 +1,10 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import Avatar from "./Avatar";
-import Overview from "./Overview";
-import Start from "./Start";
+import Courses from "./Courses";
+import Iat from "./Iat";
+import Material from "./Material";
+import Nest from "./NEST";
+import Team from "./Team";
 
 const botName = "Ping";
 const config = {
@@ -19,12 +22,24 @@ const config = {
   },
   widgets: [
     {
-      widgetName: "overview",
-      widgetFunc: (props) => <Overview {...props} />,
+      widgetName: "courses",
+      widgetFunc: (props) => <Courses {...props} />,
     },
     {
-      widgetName: "start",
-      widgetFunc: (props) => <Start {...props} />,
+      widgetName: "nest",
+      widgetFunc: (props) => <Nest {...props} />,
+    },
+    {
+      widgetName: "team",
+      widgetFunc: (props) => <Team {...props} />,
+    },
+    {
+      widgetName: "material",
+      widgetFunc: (props) => <Material {...props} />,
+    },
+    {
+      widgetName: "iat",
+      widgetFunc: (props) => <Iat {...props} />,
     },
   ],
 };
